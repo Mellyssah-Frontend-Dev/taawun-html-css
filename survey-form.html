@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+    
+  </head>
+  <body>
+  <h1 id="title">Building a Survey Form</h1>
+  <p id="description">building a survey form</p>
+
+  <form id="survey-form">
+    <fieldset>
+    <label id="name-label" for="name">Name:</label>
+    <input  type="text" id="name" name="name" required placeholder="Name">
+
+ 
+    <label for="email" id="email-label">Email:</label>
+    <input type="email" id="email" name="email" required placeholder="Example@gmail.com">
+  
+
+    
+    <label for="number" id="number-label">Number:</label>
+    <input type="number" id="number"  name="number" min="6" max="20" required placeholder="Number">
+   </fieldset>
+
+ <fieldset>
+<label for="dropdown">How was your experience?</label>
+  <select id="dropdown" name="experience">
+    <option value="satisfied">Satisfied<option>
+      <option value="Excellent">Excellent<option>
+        <option value="great">Great<option>
+           </fieldset> 
+  </select></fieldset>
+
+
+ <fielset>
+    <p>How likely are you to reccommend us?</p>
+    <label> 
+  <input type="radio" name="recommend" value="unlikely"required>
+  </label>
+
+  <label>
+    <input type="radio" name="recommend" value="likely" required>
+  </label></fielset>
+
+  <fieldset>
+  <p>What did ypu like about our service?</p>
+  <label>
+    <input type="checkbox" name="likes" value="speed">
+    </label>
+
+<label>
+    <input type="checkbox" name="likes" value ="quality">
+  </label>
+  <label>
+    <input type="checkbox" name="likes" value="support">
+  </label></fielset>
+
+<fieldset>
+<label for="comments">Additional comments:</label>
+  <textarea id="comments" name="comments" placeholder="Your feedback...."></textarea>
+</fieldset>
+<fieldset>
+  <button type="submit" id="submit"> Submit</submit>
+    </fieldset>
+   </form>
+  </body>
+</html>
